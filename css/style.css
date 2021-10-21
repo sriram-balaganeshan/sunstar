@@ -32,6 +32,7 @@ body {
 }
 
 .heading_container {
+  position: relative;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +332,7 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .slider_section .detail-box p {
@@ -466,13 +468,23 @@ a:focus {
 }
 .round
 {
+ position: relative;    
+  margin-right: 0px;
+  margin-left: auto;
   background-color: lightblue;  
   text-align: center;
 }
-.abu{
+.point{
+  position: relative;
 
 }
-
+.point li{
+  text-align: left;
+}
+.well{
+  text-align: center;
+  position: relative;
+}
 
 .service_section .box .detail-box h5 {
   font-weight: bold;
@@ -902,7 +914,91 @@ a:focus {
  
 }
 .social_box1 {
- border-bottom: 1px solid #343a40; 
+ text-align: center;
+ 
+}
+.social_box1  ul li {
+ text-align: left;
+ font-weight: bold;
+ font-size: 20px;
+ 
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+   padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .info_section .info_logo {
@@ -923,8 +1019,9 @@ a:focus {
   font-size: 24px;
 }
 
-.info_section .info_insta .insta_container img {
-  height: 45px;
+.info_section .info_insta .insta_container li {
+
+  text-align: left;
 }
 
 .info_section .info_insta .insta_container .insta-box {
@@ -954,7 +1051,13 @@ a:focus {
 
 .info_section .info_contact p {
   margin: 0;
+  text-align: left;
 }
+.info_section .info_contact a {
+  margin: 0;
+  text-align: left;
+}
+
 
 .info_section .info_contact > div {
   display: -webkit-box;
@@ -973,6 +1076,7 @@ a:focus {
 
 .info_section .info_form form input {
   outline: none;
+  text-align: left;
   width: 100%;
   padding: 7px 10px;
 }
