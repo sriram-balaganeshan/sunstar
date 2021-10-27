@@ -6,7 +6,10 @@ body {
   overflow-x: hidden;
 }
 
-
+h1,h2,h3,
+{
+  font-family: times new roman;
+}
 .layout_padding {
   padding: 90px 0;
 }
@@ -471,19 +474,31 @@ a:focus {
  position: relative;    
   margin-right: 0px;
   margin-left: auto;
-  background-color: lightblue;  
+  background-color: #8019c8;  
   text-align: center;
+}
+.round h5{
+  color: white;
 }
 .point{
   position: relative;
-
+font-family: times new roman;
 }
-.point li{
+.point  ul li{
   text-align: left;
+  font-weight: lighter;
 }
 .well{
   text-align: center;
   position: relative;
+}
+.well1{
+  text-align: center;
+  position: relative;
+
+  
+background-color: #DD2476;
+
 }
 
 .service_section .box .detail-box h5 {
@@ -1247,7 +1262,7 @@ a:focus {
   width:100%;
     float:left;
   position:relative;
-  background:#7cc084;
+  background:#fea216;
   height:40px;
   display:inline-block;
   border-radius:0px;
@@ -1342,7 +1357,7 @@ a:focus {
   margin:20px;
   padding:20px;
   border-radius:0px;
-  background:#339966;
+  background:#4ebafb;
   color:#00838F;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1368,7 +1383,7 @@ a:focus {
 .form-container .btn.submit-form{
   margin-top:15px;
   padding:12px;
-  background:#7cc084;
+  background:#fea216;
   color:white;
   border-radius:0px;
   -webkit-transition: all .3s ease-in-out;
