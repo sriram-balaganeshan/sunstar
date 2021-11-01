@@ -941,7 +941,10 @@ background-color: #DD2476;
 
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.9;
+    background: white;
+    transform: rotate(360deg);
+    color: darkviolet;
 }
 
 .fa-facebook {
@@ -954,6 +957,9 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
+
+
 }
 
 .fa-twitter {
@@ -966,6 +972,7 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
 }
 
 .fa-google {
@@ -978,6 +985,7 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
 }
 
 .fa-linkedin {
@@ -990,6 +998,7 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
 }
 
 .fa-youtube {
@@ -1002,6 +1011,7 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
 }
 
 .fa-instagram {
@@ -1014,6 +1024,7 @@ background-color: #DD2476;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  transition: transform .7s ease-in-out;
 }
 
 .info_section .info_logo {
