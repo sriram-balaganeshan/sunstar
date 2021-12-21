@@ -121,6 +121,8 @@ a:focus {
 .dropdown {
   float: left;
   overflow: visible;
+  display: block;
+  padding-left: 30px;
 }
 
 .dropdown .dropbtn {
@@ -402,7 +404,7 @@ a:focus {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #ffffff;
+  background-color: #dc3545;
   width: 15px;
   height: 15px;
   border-radius: 100%;
