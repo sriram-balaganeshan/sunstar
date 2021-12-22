@@ -107,8 +107,9 @@ a:focus {
 }
 
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #0f1521;
 }
 
 .navbar-brand span {
@@ -175,7 +176,7 @@ a:focus {
 
 
 .custom_nav-container {
-  padding: 15px 0;
+  padding: 0px 0;
 }
 
 .custom_nav-container .navbar-nav {
@@ -184,7 +185,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 25px;
-  color: #000000;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
