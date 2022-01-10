@@ -29,7 +29,94 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+<style>
 
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
 </head>
 
   <div class="hero_area">
@@ -100,20 +187,30 @@
   <section class="about_section layout_padding">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
-        <img src="images/solar.png" width="70%" height="70%" alt="">
-        </div>
         <div class="col-md-7">
+       
+        <img id="myImg" src="images/pwm.png" alt="" height="80%" width="100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+        </div>
+        <div class="col-md-4">
           <div class="social_box1">
            <div class="row">
             <i class="fa fa-plug" style="text-align: left;position: relative;font-size:50px;color:darkred;"></i>
-            <div class="col-md-10"><h2 style="color:black; text-align:left;">Solar Offgrid Inverter(MPPT & PWM) :</h2>
+            <div class="col-md-10"><h2 style="color:black; text-align:left;">Solar Offgrid Inverter(PWM) :</h2>
           
             </div>
             <ul style="text-align:left">
           
            
-<ul><li style="font-weight: 100;">Range 1KVA -15KVA</li>
+<li style="font-weight: 100;">Range 1KVA -15KVA</li>
 <li style="font-weight: 100;">Intelligent decision making capability on the basis of continuous load monitoring to select the Mains/Solar Power /Battery/Solar+Battery to drive the load.</li>
 <li style="font-weight: 100;">LCD display for better system information.</li>
 <li style="font-weight: 100;">DSP based design with absolute and stable sine wave output voltage & frequency.</li>
@@ -124,25 +221,40 @@
 <li style="font-weight: 100;">Selector switch for UPS mode / Normal mode.</li>
 </ul>
 
+      </div>
+    </div></div></section><section class="about_section layout_padding">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+       
+        <img id="myImg" src="images/mppt.png" alt="" height="80%" width="100%">
 
-<!--div class="row">
-            <i class="fa fa-rocket" style="text-align: left;position: relative;font-size:50px;color:green;"></i>
-            <div class="col-md-10"><h2 style="color:black; text-align:left;">Our Mission</h2>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="social_box1">
+           <div class="row">
+            <i class="fa fa-plug" style="text-align: left;position: relative;font-size:50px;color:darkred;"></i>
+            <div class="col-md-10"><h2 style="color:black; text-align:left;">Solar Offgrid Inverter(MPPT) :</h2>
           
             </div>
-           
-            <p>We are dedicated to providing India with the best Power Solutions. The solutions that a modern India deserves. We’re heading towards a digital age. And in that digital age, the backbone of the Indian economy will be uninterrupted power supply. How wonderful would it be if that electricity was derived from India’s abundant sunlight? With Sunstar Electric Solar Power Systems, it will be.</p></div> 
- 
-              <div class="row">
+            <ul style="text-align:left">           
+<ul><li style="font-weight: 100;">Advances MPPT technology ensures upto 30% more energy extraction from solar panel as compared to PWM based technology. Intelligent selection modes for high flow power cut areas.</li>
+<li style="font-weight: 100;">Advanced DSP based technology. LCD screen for user convenience.</li>
+<li style="font-weight: 100;">User configurable parameters through front end wide screen LCD display.</li>
+<li style="font-weight: 100;">Intelligent mixing of grid current with solar incase of solar energy shortfall during cloudy days</li>
+<li style="font-weight: 100;">DSP based design with absolute and stable sine wave output voltage & frequency..</li>
+<li style="font-weight: 100;">Can work as normal inverter if solar panels are not connected.</li>
+<li style="font-weight: 100;">Full utilization of solar power</li>
+</ul>
 
-            <i class="fa fa-eye" style="text-align: left;position: relative;font-size:50px;color:red;"></i>
-            <div class="col-md-10"><h2 style="color:black; text-align:left;">Our Vision</h2>
-          
-            </div>
-<p>Sunstar Electric wants to serve not just India in it’s quest for power and it wants to electrify the IT revolution. With our novel solutions to age old problems, we’re at the forefront of power solutions in India. Our goal is to empower India with uninterrupted, renewable, sustainable power systems.</p>
-          </div>
-          </div>
-        </div-->
       </div>
     </div>
   </section>
@@ -277,7 +389,30 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 </body>
 
 </html>
